@@ -1,0 +1,173 @@
+{% extends "blog_base.html" %}
+
+{% block title %}Employers - JBK Search Corporation{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="employers-hero container-fluid d-flex justify-content-center align-items-center"
+        style="padding-top: 100px; height: 500px;">
+        <h1 class="fw-bold text-center mb-4">EMPLOYERS</h1>
+    </div>
+</div>
+
+<hr style="width: 80%; margin: 50px auto;">
+
+<!-- BEGIN SERVICES SECTION -->
+<div class="container-fluid services-container">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-md-4 ms-5">
+            <img src="{{ url_for('static', filename='img/searching-services.png') }}" alt="">
+        </div>
+        <div class="col-md-5">
+            <div>
+                <h2 class="fw-bold">Permanent Placement - We go <span style="color: #439539;">beyond</span> just resumes
+                </h2>
+                <p class="lead">At <span class="fw-bold">JBK Search</span>, we specialize in <span
+                        class="fw-bold">permanent placements</span> that drive innovation and long-term success in the
+                    <span class="fw-bold">pharmaceutical, biotech, and medical device industries</span>. Finding the
+                    right talent is more than just filling a position—it's about securing the <span class="fw-bold">best
+                        minds</span> who will make a lasting impact on your organization.
+                </p>
+                <p class="lead">With over <span class="fw-bold">three decades of experience</span>, we've built an <span
+                        class="fw-bold">unmatched network</span> of top professionals, helping companies like yours
+                    attract, hire, and retain <span class="fw-bold">high-caliber talent</span> in this competitive
+                    market.</p>
+            </div>
+
+            <!-- Hidden content -->
+            <div id="more-content-1" class="hidden-content">
+                <p class="lead">At <span class="fw-bold">JBK Search</span>, we specialize in <span
+                        class="fw-bold">permanent placements</span> that drive innovation and long-term success in the
+                    <span class="fw-bold">pharmaceutical, biotech, and medical device industries</span>. Finding the
+                    right talent is more than just filling a position—it's about securing the <span class="fw-bold">best
+                        minds</span> who will make a lasting impact on your organization.
+                </p>
+                <p class="lead">With over <span class="fw-bold">three decades of experience</span>, we've built an
+                    unmatched network of top professionals, helping companies like yours attract, hire, and retain <span
+                        class="fw-bold">high-caliber talent</span> in this competitive market.</p>
+
+                <h2 class="mb-3">Why Choose <span style="color: #439539;">JBK Search</span> for Permanent Placements?
+                </h2>
+                <ul>
+                    <li class="fw-bold h5"><img src="{{ url_for('static', filename='img/favicon-32x32.png') }}" alt="">
+                        Industry Expertise: <span class="lead">We specialize <span class="fw-bold">exclusively</span> in
+                            <span class="fw-bold">pharmaceutical, biotech, and medical device placements</span>, giving
+                            us deep insights into market trends, hiring challenges and talent expectations</span>.</li>
+                    <li class="fw-bold h5"><img src="{{ url_for('static', filename='img/favicon-32x32.png') }}"
+                            class="mr-3" alt=""> Precision Recruiting: <span class="lead">We don't just send resumes —
+                            we <span class="fw-bold">handpick candidates</span> who match your <span
+                                class="fw-bold">technical needs, company culture, and long-term vision</span></span>.
+                    </li>
+                    <li class="fw-bold h5"><img src="{{ url_for('static', filename='img/favicon-32x32.png') }}" alt="">
+                        Exclusive Access to Top Talent: <span class="lead">Many of the professionals we place are <span
+                                class="fw-bold">passive candidates</span> — top performers who aren't actively job
+                            searching but are open to the right opportunity</span>.</li>
+                    <li class="fw-bold h5"><img src="{{ url_for('static', filename='img/favicon-32x32.png') }}" alt="">
+                        Speed Without Compromise: <span class="lead">Our <span class="fw-bold">proven search
+                                methodology</span> ensures a streamlined process, delivering <span
+                                class="fw-bold">high-quality candidates quickly</span> without sacrificing
+                            quality</span>.</li>
+                    <li class="fw-bold h5"><img src="{{ url_for('static', filename='img/favicon-32x32.png') }}" alt="">
+                        Strategic, Long-Term Hires: <span class="lead">We focus on <span
+                                class="fw-bold">retention</span>, ensuring that the candidates we place are not just
+                            qualified but are also <span class="fw-bold">committed to your company's
+                                mission</span>.</span></li>
+                </ul>
+
+                <h2 class="mb-2">Who Do We <span style="color: #439539;">Place</span> in Permanent Roles?</h2>
+                <ul>
+                    <li class="fw-bold employers-roles h5">Executive: <span class="lead">(VPs, Directors, C-Level
+                            Executives)</span></li>
+                    <li class="fw-bold employers-roles h5">Clinical Research & Trials: <span class="lead">(Clinical
+                            Project Managers, Clinical Operations Leaders)</span></li>
+                    <li class="fw-bold employers-roles h5">Regulatory Affairs & Compliance: <span
+                            class="lead">(Regulatory Directors, FDA Compliance Experts)</span></li>
+                    <li class="fw-bold employers-roles h5">Quality Assurance & Manufacturing: <span class="lead">(QA
+                            Managers, Validation Engineers)</span></li>
+                    <li class="fw-bold employers-roles h5">Medical Affairs & Scientific Roles: <span
+                            class="lead">(Medical Science Liaisons, R&D Scientists)</span></li>
+                    <li class="fw-bold employers-roles h5">Commercial & Business Development: <span class="lead">(Sales
+                            Leaders, Market Access, Business Development Executives)</span></li>
+                </ul>
+            </div>
+
+            <!-- Read More Button -->
+            <a href="#" class="read-more-link" onclick="toggleReadMore(event, 'more-content-1', 'read-more-btn-1')"
+                id="read-more-btn-1">Read More...</a>
+            <hr>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-md-4 ms-5"></div>
+        <div class="col-md-5">
+            <div>
+                <h2 class="fw-bold"><span style="color: #439539;">Staffing</span> & <span
+                        style="color: #439539;">Contract</span> Search</h2>
+                <p class="lead">At <span class="fw-bold">JBK Search</span>, we understand that today's life sciences
+                    industry moves fast. Companies in <span class="fw-bold">pharmaceuticals, biotech, and medical
+                        devices</span> often need <span class="fw-bold">highly skilled
+                        professionals—immediately</span>—to support critical projects, regulatory demands, and product
+                    development timelines. That's why we've expanding our services to offer <span
+                        class="fw-bold">contract staffing solutions</span> tailored to your specific needs.</p>
+                <h3>Why Choose <span style="color: #439539;">JBK Search</span> for Contract Staffing?</h3>
+                <p class="lead">We provide <span class="fw-bold">on-demand, specialized talent</span> to help your
+                    organization <span class="fw-bold">stay agile, compliant, and competitive</span> in a rapidly
+                    evolving industry. Whether you need short-term support for a clinical trial, regulatory submission,
+                    product launch, or R&D initiative, we deliver <span class="fw-bold">qualified professionals ready to
+                        hit the ground running</span>.</p>
+            </div>
+
+            <!-- Hidden Content -->
+            <div id="more-content-2" class="hidden-content">
+                <h3>Our <span style="color: #439539;">Contract Staffing</span> Services Include:</h3>
+                <ul>
+                    <li class="h5"><strong>Specialized Talent Sourcing</strong> – We leverage our <span
+                            class="fw-bold">extensive industry network</span> to connect you with <span
+                            class="fw-bold">experienced professionals in pharma, biotech, and medical devices</span> who
+                        fit your project needs.</li>
+                    <li class="h5"><strong>Flexible Workforce Solutions</strong> – We <span class="fw-bold">customize
+                            solutions</span> to match your business objectives: whether you need short-term, long-term,
+                        or project-based contract professionals.</li>
+                    <li class="h5"><strong>Fast & Efficient Hiring</strong> – Our <span class="fw-bold">streamlined
+                            recruiting process</span> ensures you get the right people <span
+                            class="fw-bold">quickly</span>, minimizing downtime and maximizing productivity.</li>
+                    <li class="h5"><strong>Compliance & Risk Management</strong> – We handle the complexities of <span
+                            class="fw-bold">payroll, benefits, taxes, and compliance</span>, ensuring your contractors
+                        meet all regulatory and legal requirements.</li>
+                    <li class="h5"><strong>Seamless Integration</strong> – Contract professionals are embedded in your
+                        team and maintain alignment with company culture, project goals, and industry regulations.</li>
+                </ul>
+            </div>
+
+            <a href="#" class="read-more-link" onclick="toggleReadMore(event, 'more-content-2', 'read-more-btn-2')"
+                id="read-more-btn-2">Read More...</a>
+            <hr>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid services-cta mb-4 p-4">
+    <h2 class="text-center">JBK Search recruits for companies across the globe who share our belief that anything is
+        possible.</h2>
+
+    <!-- Two Side-by-Side Text Divs -->
+    <div class="justify-content-center mt-4">
+        <!-- Left Text Div -->
+        <div class="text-center container">
+            <p class="lead">With thousands of candidates in our database and over 30 years of experience in executive
+                search, we are highly confident we can find the match for you! Our tailored approach to recruiting
+                ensures that we deliver the best talent, perfectly aligned with your company's needs and goals.</p>
+        </div>
+    </div>
+
+    <!-- Call to Action Button -->
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-4 text-center">
+            <a href="{{ url_for('employer_contact') }}" class="btn btn-primary btn-lg">Contact Us</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
