@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>About Us</h1>
+    <div class="row">
+        <div class="col-md-8">
+            <h2>Our Story</h2>
+            <p>Learn more about our company and our mission.</p>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('main.bp_about') }}">About Brenda</a></li>
+                    <li><a href="{{ url_for('main.jake_about') }}">About Jake</a></li>
+                    <li><a href="{{ url_for('main.nash_about') }}">About Nash</a></li>
+                    <li><a href="{{ url_for('main.laine_about') }}">About Laine</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+{% endblock %} 

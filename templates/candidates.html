@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+
+{% block title %}Candidates - JBK Search Corporation{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="job-seekers-hero container-fluid d-flex justify-content-center align-items-center"
+        style="padding-top: 100px; height: 500px;">
+        <h1 class="fw-bold text-center mb-4">DON'T QUIT YOUR <span style="color: #439539;">DAYDREAM</span>!</h1>
+    </div>
+</div>
+</div>
+<hr style="width: 80%; margin: 50px auto;">
+
+<div class="container mb-3"><strong>
+        <h1 class="my-5">Career Opportunities
+    </strong> with <span style="color: #439539;">JBK Search</span></h1>
+    <p class="lead">
+        At <span class="fw-bold">JBK Search</span>, we’re more than just recruiters—we’re your <span
+            class="fw-bold">career advocates</span>.
+        Think of us as your career
+        coach. Whether you’re looking for a <span class="fw-bold">long-term career move</span> or a <span
+            class="fw-bold">
+            flexible contract opportunity</span>, we specialize in connecting professionals like you with <span
+            class="fw-bold">top-tier companies</span> in
+        the pharmaceutical, biotech,
+        and medical device industries.
+    </p>
+    <p class="lead mb-5">
+        We understand that finding the right opportunity isn’t just about the job title — it’s about <span
+            class="fw-bold">aligning your skills, passions, and career goals</span> with the right organization.
+        <span class="fw-bold" style="color: #439539; text-decoration: underline;">That’s why we offer two distinct
+            career paths</span>:
+    </p>
+</div>
+
+<!-- Services Section -->
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <!-- Permanent Placement Column -->
+        <div class="col-md-5 d-flex flex-column">
+            <h2 class="fw-bold">Permanent Placement: <span style="color: #439539;">Find Your Next Career Move</span>
+            </h2>
+            <p class="lead">
+                If you're looking for a <span class="fw-bold">full-time position</span> with stability, growth
+                potential and long-term impact, our <strong>permanent placement services</strong> can help you land
+                the <span class="fw-bold">right role at the right company</span>.
+            </p>
+
+            <!-- Hidden Content -->
+            <div id="more-content-1" class="hidden-content">
+                <ul class="p-0">
+                    <li class="h5 mb-3"><img src="../static/img/favicon-32x32.png" alt=""> <span class="fw-bold">
+                            Exclusive Access to Top Employers:
+                        </span> We work with some of the most innovative
+                        companies in pharma, biotech, and medtech, giving you access to unadvertised job opportunities.
+                    </li>
+                    <li class="h5 mb-3"><img src="../static/img/favicon-32x32.png" class="mr-3" alt="">
+                        <span class="fw-bold">
+                            Career Guidance & Interview Prep:</span> We don’t just send your resume; we help you
+                        prepare, negotiate, and position yourself for success
+                    </li>
+                    <li class="h5 mb-3"><img src="../static/img/favicon-32x32.png" alt=""> <span class="fw-bold">
+                            Personalized Job
+                            Matching:
+                        </span> We take the time to understand your career goals, skills, and ideal work
+                        environment, ensuring a perfect fit.
+                    </li>
+                    <li class="h5 mb-3"><img src="../static/img/favicon-32x32.png" alt=""> <span class="fw-bold">
+                            Speed Without
+                            Compromise:
+                        </span>
+                        Searching while currently employed? We ensure discretion so you can explore new opportunities
+                        without risk.
+                    </li>
+                    <li class="h5 mb-3"><img src="../static/img/favicon-32x32.png" alt=""> <span class="fw-bold">
+                            Strategic, Long-Term
+                            Hires:
+                        </span> Our services are completely free for candidates. We're here to advocate for you and
+                        help you land your dream job.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Read More Button -->
+            <a href="#" class="read-more-link" onclick="toggleReadMore(event, 'more-content-1', 'read-more-btn-1')"
+                id="read-more-btn-1">Read More...</a>
+            <hr>
+        </div>
+
+        <!-- Staffing & Contract Column -->
+        <div class="col-md-5 d-flex flex-column">
+            <h2 class="fw-bold">Contract Staffing: <span style="color: #439539;">Flexibility, Experience and
+                    Opportunity</span>
+            </h2>
+            <p class="lead">
+                Suppose you’re looking for <span class="fw-bold">
+                    short-term assignments, project based work, or more flexibility in your
+                    career
+                </span>. Our staffing services connect you with opportunities at top
+                life sciences companies—<span class="fw-bold">without the commitment of a permanent role</span>.
+            </p>
+
+            <!-- Hidden Content -->
+            <div id="more-content-2" class="hidden-content">
+                <ul class="p-0">
+                    <li class="h5 mb-3"><img src="../static/img/favicon-32x32.png" alt=""> <span class="fw-bold">
+                            Work with Leading Companies:
+                        </span> Get the chance to work on cutting-edge projects at some of the most innovative Life
+                        Science companies.
+                    </li>
+                    <li class="h5 mb-3"><img src="../static/img/favicon-32x32.png" class="mr-3" alt="">
+                        <span class="fw-bold">
+                            Flexibility & Control:</span> Take on assignments that fit your lifestyle, career goals and
+                        personal commitments.
+                    </li>
+                    <li class="h5 mb-3"><img src="../static/img/favicon-32x32.png" alt=""> <span class="fw-bold">
+                            Quick & Easy Hiring Process:
+                        </span> Our streamlined process gets you placed faster so you can start working sooner.
+                    </li>
+                    <li class="h5 mb-3"><img src="../static/img/favicon-32x32.png" alt=""> <span class="fw-bold">
+                            Competitive Pay & Benefits:
+                        </span>
+                        We ensure that our contract employees receive fair compensation with access to benefits and
+                        compliance support.
+                    </li>
+                    <li class="h5 mb-3"><img src="../static/img/favicon-32x32.png" alt=""> <span class="fw-bold">
+                            Potential for Permanent Hire:
+                        </span> Many contract roles lead to full-time opportunities if you find the right fit.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Read More Button -->
+            <a href="#" class="read-more-link" onclick="toggleReadMore(event, 'more-content-2', 'read-more-btn-2')"
+                id="read-more-btn-2">Read More...</a>
+            <hr>
+        </div>
+    </div>
+    <div class="container text-center" style="height: 50px; width: 100%;">
+        <h2>
+            Interested in <strong>contract work</strong> or <strong>ready to make a career move</strong>? <a
+                href="{{ url_for('candidate_contact') }}" class="btn btn-success rounded-pill text-white px-3"
+                style="background-color: #439539; border: none;">
+                Contact Us
+            </a>
+        </h2>
+
+
+
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,340 @@
+<!-- templates/our-team.html -->
+{% extends "base.html" %}
+
+{% block title %}About Us - JBK Search Corporation{% endblock %}
+
+{% block content %}
+<style>
+    .profile-card {
+        padding: 24px 16px 16px 16px;
+        border-radius: 16px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        min-height: 420px;
+        position: relative;
+        transition: box-shadow 0.3s;
+    }
+    .profile-card:hover {
+        box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    }
+    .profile-card img {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 16px;
+        border: 4px solid #fff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        background: #f8f8f8;
+    }
+    .profile-details {
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    .profile-details h3 {
+        margin-bottom: 4px;
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+    .profile-details p {
+        margin-bottom: 0;
+        font-size: 1.1em;
+        color: #555;
+    }
+    .profile-info {
+        text-align: center;
+        margin-top: 8px;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    .profile-info p, .profile-info a {
+        font-size: 1em;
+        margin-bottom: 8px;
+        color: #333;
+        word-break: break-word;
+    }
+    .profile-info a.btn {
+        margin-top: 8px;
+        margin-bottom: 0;
+        width: 90%;
+        max-width: 220px;
+    }
+    @media (max-width: 991px) {
+        .profile-card {
+            min-height: 440px;
+        }
+    }
+</style>
+
+<div class="container-fluid d-flex justify-content-center align-items-center" style="padding-top: 125px;">
+    <img src="../static/img/about-avatars.png"></img>
+</div>
+
+<div class="container my-5">
+    <h1 class="text-center p-5" style="font-size:5em; font-weight:700;">The Recruitment of Possibility</h1>
+    <div class="mission container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="text-center" style="font-size:5em; font-weight:700;">OUR MISSION: </h1>
+                <h3 class="text-center" style="font-size:2.5em; font-weight:500;">Being the Bruce Springsteen (<span
+                        class="fw-bold text-decoration-underline" style="color:#439539;">THE BOSS</span>) of Life
+                    Science
+                    Recruitment
+                </h3>
+            </div>
+            <div class="col-md-6">
+                <h2 style="font-weight: 700; font-size: 3em;">OUR VALUES:</h2>
+                <p class="lead">
+                    At <span class="fw-bold">JBK Search</span>, we know that <span class="fw-bold">people are the
+                        driving force</span> behind every
+                    breakthrough in the
+                    <span class="fw-bold">pharmaceutical, biotech, and medical device industries</span>. Your team is
+                    the
+                    foundation of your innovation, growth and competitive advantage
+                    <span class="fw-bold"></span>.
+                </p>
+                <p class="lead">
+                    One <span class="fw-bold">strategic hire</span> can be the catalyst for transformation—whether it's
+                    developing <span class="fw-bold">
+                        groundbreaking
+                        therapies
+                    </span>, securing <span class="fw-bold">FDA approvals faster than ever</span>, or seamlessly
+                    <span class="fw-bold">
+                        transitioning products from R&D to
+                        manufacturing
+                    </span>. The right talent doesn't just fill a role; they <span class="fw-bold">elevate your entire
+                        organization</span>.
+                </p>
+                <h2 style="font-weight: 600;">WE HAVE AN AFFINITY FOR PEOPLE</h2>
+                <p class="lead">That's why we approach every search with a <span class="fw-bold">deep commitment to
+                        precision,
+                        integrity, and discretion</span>.
+                    At <span class="fw-bold">JBK Search</span>, we don't just connect companies with candidates—we build
+                    <span class="fw-bold">lasting partnerships</span> that
+                    drive real impact. Our <span class="fw-bold">unparalleled industry expertise</span> and <span
+                        class="fw-bold">
+                        tailored
+                        recruiting strategies
+                    </span> ensure
+                    that every hire is an investment in your company's success.
+                </p>
+                <h1 class="fw-bold">
+                    Let's work together to find the talent that <span style="color: #439539;">propels your business
+                        forward</span>.
+                </h1>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="about-container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="text-center">
+
+                </h3>
+                <h3 class="text-center">
+
+                </h3>
+                <h3 class="text-center">
+
+                </h3>
+                <!-- <h2 class="text-center">
+                    JBK Search is a global recruiting firm committed to connecting top talent with passion-driven
+                    organizations in the <span style="color: #439539;">biotechnology</span>, <span
+                        style="color: #439539;">biopharma</span>, <span style="color: #439539;">molecular
+                        diagnostics</span>, <span style="color: #439539;">medical devices & software</span>, <span
+                        style="color: #439539;">labratory services</span> and <span style="color: #439539;">nonprofit
+                        industries</span>.
+                </h2> -->
+
+            </div>
+            <!-- <div class="col-md-6">
+                <h2 class="mb-4 text-center">We are <span style="color: #439539;">experienced recruiters</span>. We are
+                    <span style="color: #439539;">trusted advisors</span>. Our clients seek us out because
+                    of our industry experience and our straightforward, no-nonsense approach to recruiting
+                </h2>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- <div class="about-container mb-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h4><img src="../static/img/favicon-32x32.png" alt="JBK Search Icon" class="icon me-2 py-2"> We ask many
+                    questions during the initial assessment.</h4>
+                <h4><img src="../static/img/favicon-32x32.png" alt="JBK Search Icon" class="icon me-2 py-2"> We create a
+                    profile of the candidate based on the skills needed and the personality desired.</h4>
+                <h4><img src="../static/img/favicon-32x32.png" alt="JBK Search Icon" class="icon me-2 py-2"> We assemble
+                    an exhaustive list of candidates from our database of over 12,000 candidates, our extensive network,
+                    and our state-of-the-art search tools.</h4>
+                <h4><img src="../static/img/favicon-32x32.png" alt="JBK Search Icon" class="icon me-2 py-2"> We conduct
+                    an initial interview and assessment, followed up by our Founder & CEO's lengthy behavioral-based
+                    interview.</h4>
+                <h4><img src="../static/img/favicon-32x32.png" alt="JBK Search Icon" class="icon me-2 py-2"> We present
+                    the candidate to the leadership team.</h4>
+                <h4><img src="../static/img/favicon-32x32.png" alt="JBK Search Icon" class="icon me-2 py-2"> We coach
+                    the client on areas to dig in and the candidate's hot buttons.</h4>
+            </div>
+            <div class="col-md-6">
+                <h4><img src="../static/img/favicon-32x32.png" alt="JBK Search Icon" class="icon me-2 py-2"> We cover
+                    the counteroffer (early & often).</h4>
+                <h4><img src="../static/img/favicon-32x32.png" alt="JBK Search Icon" class="icon me-2 py-2"> We discuss
+                    any concerns or needs with the candidate's significant others or family if needed concerning issues
+                    such as relocation.</h4>
+                <h4><img src="../static/img/favicon-32x32.png" alt="JBK Search Icon" class="icon me-2 py-2"> We
+                    negotiate offers.</h4>
+                <h4><img src="../static/img/favicon-32x32.png" alt="JBK Search Icon" class="icon me-2 py-2"> We help
+                    with onboarding if asked.</h4>
+                <h4><img src="../static/img/favicon-32x32.png" alt="JBK Search Icon" class="icon me-2 py-2"> We stay in
+                    touch with the candidate and client after the placement to address any concerns.</h4>
+            </div>
+        </div>
+    </div> -->
+
+</div>
+
+<div style="height: 75px;"></div> <!-- Spacer div -->
+<div class="vision container my-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h1 class="text-center" style="font-size:5em; font-weight:700;">JBK'S VISION: </h1>
+            <h3 class="text-center" style="font-size:3em; font-weight:500;">Perfecting the <span
+                    style="color: #439539;">human element</span> of <span style="color: #439539;">Life
+                    Science</span>
+                recruitment.
+            </h3>
+        </div>
+        <div class="col-md-6">
+            <h2 style="font-weight: 600;">OUR HUMAN CENTERED APPROACH</h2>
+            <p class="lead">
+                Personal connections are at the heart of JBK Search, where we focus on understanding each candidate's
+                unique strengths and aligning them with the perfect opportunities.
+            </p>
+
+            <p class="lead">When it comes to connecting with our clients and candidates, we believe in the power of
+                <span class="fw-bold">Human Connection</span>. We use our genuine voices, empathy, and active listening,
+                because we know you are
+                people – not machines - with unique individuals with stories, aspirations, missions, and needs.
+            </p>
+            <h4 style="font-weight: 600;">AI RECRUITMENT AND THE AUTOMATION ERA</h4>
+            <p class="lead">JBK Search embraces cutting-edge technology to stay ahead in an ever-changing world. We
+                leverage AI and automation for tasks that benefit from speed and efficiency, enabling us to fill
+                positions efficiently. </p>
+
+            <p class="lead">
+                We feel a deep obligation for keeping the human element in our recruiting and staffing services. JBK
+                Search remains dedicated to human connections, offering individualized attention and
+                thoughtful
+                communication to both clients and candidates at every step.
+            </p>
+
+        </div>
+    </div>
+</div>
+<div style="height: 75px;"></div> <!-- Spacer div -->
+
+
+<div class="team-section mb-4">
+    <div class="text-center mb-5">
+        <img src="../static/img/PTB-for-website1-1.jpeg" class="img-fluid rounded-circle" alt="Team Member"
+            style="max-width: 50%;">
+    </div>
+
+    <div class="container">
+        <h3 class="mb-3 text-center" id="our-team" style="font-size:5em; font-weight:700;">Our Team</h3>
+        <div class="row justify-content-center p-5">
+            <div class="col-lg-3 col-md-6">
+                <div class="profile-card mb-3">
+                    <img src="../static/img/bp-linkedin.jpg" alt="Brenda" class="img-fluid rounded-circle mb-2">
+                    <div class="profile-details">
+                        <h3>Brenda Patterson</h3>
+                        <p>Founder & President</p>
+                        <p>Senior Recruiter</p>
+                    </div>
+                    <div class="profile-info">
+                        <p><a target="_blank" href="mailto:brenda@jbksearch.com">Email: brenda@jbksearch.com</a></p>
+                        <p><a href="https://www.linkedin.com/in/brendapatterson/" target="_blank"><i
+                                    class="bi bi-linkedin lead social-link"> Connect
+                                    with
+                                    Brenda on
+                                    LinkedIn!</i></a>
+                        </p>
+
+                        <a href="{{ url_for('bp_about') }}" class="btn btn-secondary">Read Brenda's Bio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="profile-card mb-3">
+                    <img src="../static/img/jake-linkedin.jpg" alt="Jake" class="img-fluid rounded-circle mb-2">
+                    <div class="profile-details">
+                        <h3>Jake Patterson</h3>
+                        <p>Director of Operations</p>
+                    </div>
+                    <div class="profile-info">
+                        <p><a target="_blank" href="mailto:jake@jbksearch.com">Email: jake@jbksearch.com</a></p>
+                        <p></p>
+                        <p><a href="https://www.linkedin.com/in/jake-patterson-7411b72b/" target="_blank"><i
+                                    class="bi bi-linkedin lead social-link"> Connect with Jake on LinkedIn!</i></a>
+                        </p>
+                        <a href="{{ url_for('jake_about') }}" class="btn btn-secondary">Read Jake's Story</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="profile-card mb-3">
+                    <img src="../static/img/laine-linkedin.jpg" alt="Laine" class="img-fluid rounded-circle mb-2">
+                    <div class="profile-details">
+                        <h3>Laine Tongren</h3>
+                        <p>Content Strategist</p>
+                    </div>
+                    <div class="profile-info">
+                        <p><a href="mailto:laine@jbksearch.com" target="_blank">Email: laine@jbksearch.com</a></p>
+                        <p><a href="https://www.linkedin.com/in/laine-tongren-7845a8255/" target="_blank"><i
+                                    class="bi bi-linkedin lead social-link"> Connect with Laine on
+                                    LinkedIn!</i></a>
+                        </p>
+                        <a href="{{ url_for('laine_about') }}" class=" btn btn-secondary">Read Laine's
+                            Story</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="profile-card mb-3">
+                    <img src="../static/img/nashcircle.png" alt="Laine" class="img-fluid rounded-circle mb-2">
+                    <div class="profile-details">
+                        <h3>Nash Ababa</h3>
+                        <p>Recruiter</p>
+                    </div>
+                    <div class="profile-info">
+                        <p><a href="mailto:nash@jbksearch.com" target="_blank">Email: nash@jbksearch.com</a></p>
+                        <p><a href="https://www.linkedin.com/in/nashville-kim-khrizea-ababa-40a7512a7/"
+                                target="_blank"><i class="bi bi-linkedin lead social-link"> Connect with Nash on
+                                    LinkedIn!</i></a>
+                        </p>
+                        <a href="{{ url_for('nash_about') }}" class=" btn btn-secondary">Read Nash's
+                            Story</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+{% endblock %}
